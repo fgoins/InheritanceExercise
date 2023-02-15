@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 
 namespace Inheritance
 {
@@ -23,17 +24,33 @@ namespace Inheritance
 
 
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            //  Create an object of your Bird class
+            //   *  give values to your members using the object of your Bird class
+            Bird breed = new Bird()
+            {
+                nameKind = "spix Macaw",
+                canfly = true,
+                color = "blue",
+                beaksize = 3.4
+            };
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
-        }
+
+            //     * Creatively display the class member values
+            breed.printbirddetails();
+            Console.WriteLine("---------------------------------");
+            //Create an object of your Reptile class
+            // *  give values to your members using the object of your Reptile class
+            Reptile reptile= new Reptile() 
+            {
+             kind = "lizard",
+             namekind = "aligator",
+             iscoldblooded = true,
+             doeshaveteeth = true
+            };
+
+            reptile.lizard();
+            // * Creatively display the class member values
+
+}
     }
 }
